@@ -1,6 +1,7 @@
 {
   "name": "cozy-mails",
   "version": "0.0.1",
+  "displayName": "mail",
   "engine": {
     "node": "0.8.x"
   },
@@ -39,22 +40,12 @@
   "scripts": {
     "test": "cake tests",
     "start": "coffee server.coffee"
-  }
-, "cozy-permissions":
-  { "Mail":
-    { "description": "Recovers and stores your mails."
-    }
-  , "MailBox":
-    { "description": "Configures your mailboxes. Beware, this contains your email credentials"
-    }
-  , "MailFolder":
-    { "description": "Folders that contains emails (ex. Inbox, Sent Mails)."
-    }
-  , "MailSent":
-    { "description": "A mail waiting to be sent"
-    }
-  , "Account":
-    { "description": "Encrypts your mailboxes passwords."
-    }
+  },
+  "cozy-permissions":
+  { "Mail": { "description": "Recovers and stores your mails." }
+  , "MailBox": { "description": "Configures your mailboxes. Beware, this contains your email credentials"}
+  , "MailFolder": { "description": "Folders that contains emails (ex. Inbox, Sent Mails)." }
+  , "MailSent": { "description": "A mail waiting to be sent" }
+  , "Account": { "description": "Encrypts your mailboxes passwords." }
   }
 }
